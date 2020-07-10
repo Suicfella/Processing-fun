@@ -31,12 +31,16 @@ public class ButterflyCurve extends ShaderSketch {
     private final float MAX_THETA = PI * 12;
 
     private List<Point> points;
-
+    private float increment = 1;
     @Override
     public void draw() {
         background(0);
         points.clear();
-        float increment = map(mouseX, 0, width, 0.001f, 0.05f);
+        //float increment = map(mouseX, 0, width, 0.001f, 0.2f);
+        increment -= 0.002;
+        if(increment <= 0.002) {
+            increment = 1;
+        }
         for(float theta = 0; theta < MAX_THETA; theta += increment) {
             float r = exp(cos(theta)) - 2 * cos(4 * theta) + pow(sin(theta / 24f), 5);
             float x = r * cos(theta);

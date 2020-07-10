@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2781ccb4-27cb-42a0-8c13-d04fd9fedb7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/processing/ButterflyCurve$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Processing fun/processing/ButterflyCurve$Point.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Processing fun/processing/ButterflyCurve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Processing fun/processing/ButterflyCurve.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/processing/ButterflyCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/processing/ButterflyCurve.java" afterDir="false" />
     </list>

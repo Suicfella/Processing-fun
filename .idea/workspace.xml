@@ -7,23 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2781ccb4-27cb-42a0-8c13-d04fd9fedb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cloudshader.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/fireshader.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/noisetex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/processing/LearningHex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/processing/ParticleGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/EffectShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/data/EffectShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fragmentShader1.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/data/fragmentShader1.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/GameLol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/Idiot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/MaurerRose.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Processing fun/MaurerRose.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/PascalsTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Processing fun/PascalsTriangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/processing/RoseShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Processing fun/processing/RoseShape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MaurerRose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaurerRose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PascalsTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PascalsTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/processing/RoseShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/processing/RoseShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Processing fun/processing/ButterflyCurve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Processing fun/processing/ButterflyCurve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing/ButterflyCurve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/processing/ButterflyCurve.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +63,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ParticleGrid">
+  <component name="RunManager" selected="Application.ButterflyCurve">
+    <configuration name="ButterflyCurve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="processing.ButterflyCurve" />
+      <module name="Processing fun" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="processing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LearningHex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="processing.LearningHex" />
       <module name="Processing fun" />
@@ -118,26 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoseShape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="processing.RoseShape" />
-      <module name="Processing fun" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="processing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ButterflyCurve" />
         <item itemvalue="Application.ParticleGrid" />
         <item itemvalue="Application.LearningHex" />
         <item itemvalue="Application.PascalsTriangle" />
         <item itemvalue="Application.MaurerRose" />
-        <item itemvalue="Application.RoseShape" />
       </list>
     </recent_temporary>
   </component>

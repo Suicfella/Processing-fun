@@ -4,6 +4,6 @@ uniform float time;
 
 void main(){
 vec2 uv = gl_FragCoord.xy / resolution.xy;
-uv *= fract(time);
+uv *= fract(time / 4);
 gl_FragColor = texture2D(textureImg, uv);
 }

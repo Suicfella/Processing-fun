@@ -3,7 +3,7 @@
 uniform float time, red, green, blue;
 uniform vec2 resolution;
 
-#define t time * 2.
+#define t time / 2.
 #define r resolution.xy
 
 float map(float value, float min1, float max1, float min2, float max2) {
@@ -14,7 +14,7 @@ void main() {
 
     vec3 c;
     float l,z=t;
-    float mappedIncrement = map(abs(sin(t)), 0, 1, 0.001, 0.25);
+    float mappedIncrement = map(abs(sin(t)), 0, 1, 0.01, 0.1);
     float mappedOffset = map(r.x, 0, 800., 0, 0.2);
     for(int i=0;i<3;i++) {
         vec2 uv,p=gl_FragCoord.xy/r;

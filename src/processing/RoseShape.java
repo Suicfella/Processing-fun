@@ -1,6 +1,7 @@
 package processing;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 import java.lang.invoke.MethodHandles;
 
@@ -12,44 +13,59 @@ public class RoseShape extends ShaderSketch {
 
     @Override
     public void settings() {
-        size(800, 600);
+        size(800, 600, P3D);
         smooth(16);
     }
 
+    private PImage textureImage;
     @Override
     public void setup() {
         background(0);
+        textureImage = loadImage("fractaltex.png");
+        surface.setAlwaysOnTop(true);
         //colorMode(RGB, 360, 100, 100);
     }
 
-    private float k = 0;
-    private float d = 0;
+    private float d = 8;
+    private float n = 5;
+
     private int radius = 250;
+
+    private void renderShader(boolean filter, String shaderName) {
+        String vignettePass = shaderName + ".glsl";
+        uniform(vignettePass).set("time", radians(frameCount));
+       // uniform(vignettePass).set("fractalTexture", textureImage);
+        if(filter) {
+            hotFilter(vignettePass);
+        } else {
+            hotShader(vignettePass);
+        }
+    }
 
     @Override
     public void draw() {
         if (started) {
+            float k = n / d;
             background(0);
-
-
-            strokeWeight(3);
-            noFill();
             translate(width / 2f, height / 2f);
-            for (float t = 0; t < TAU * d; t += 0.006) {
-                float r = radius * cos(k * t);
-                float x = r * cos(t);
-                float y = r * sin(t);
-                beginShape();
-                float col = map(t, 0, TAU * d, 0, 255);
-                stroke(col, col, col, 75);
-                vertex(x, y);
-                endShape(CLOSE);
+
+            beginShape();
+          //  renderShader(false, "FBMShader");
+            //fill(255);
+           // noFill();
+            noStroke();
+           // strokeWeight(4);
+            texture(textureImage);
+            for (float a = 1; a < TWO_PI * d; a += 0.02) {
+                float r = 200 * cos(k * a);
+                float x = r * cos(a);
+                float y = r * sin(a);
+                vertex(x, y, x, y);
             }
-
-
-            k += 0.004;
-            d += 0.007;
-
+            endShape();
+           // resetShader();
+            n += 0.021;
+            d += 0.017;
         }
     }
 

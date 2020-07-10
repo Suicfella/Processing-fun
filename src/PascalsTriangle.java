@@ -86,7 +86,7 @@ public class PascalsTriangle extends ShaderSketch {
         textFont(f, 10);
 
         //fill(0);
-        renderShader1(false, shader);
+      //  renderShader1(false, shader);
         for (int r = 1; r < count; r++) {
             long b = 1L;
 
@@ -97,12 +97,13 @@ public class PascalsTriangle extends ShaderSketch {
                 drawHexagon(x, y, 20);
                 colorMode(HSB, 360, 100, 100);
                 float col = map(r, 0, 20, 0, 360);
+                fill(col);
                 text(floor(b), x, y);
                 b = (r-c-1)*b/(c+1);
             }
 
         }
 
-        resetShader();
+      //  resetShader();
     }
 }

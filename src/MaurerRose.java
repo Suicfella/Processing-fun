@@ -29,6 +29,7 @@ public class MaurerRose extends PApplet {
         noFill();
         beginShape();
         strokeWeight(1);
+        n = 5;
         for (float i = 0; i <= TWO_PI; i += TWO_PI/ 360) { // degrees to radians
             float k = i * d;
             float radius = 150 * sin(n * k);
